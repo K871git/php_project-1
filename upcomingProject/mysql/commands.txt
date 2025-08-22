@@ -1,0 +1,20 @@
+//________________________DATABASE queries_________________________//
+1) SHOW DATABASES; 
+ listing all the databases in the MYSQL in user account
+ system cls :- command for the clearing the prompt
+ 
+ 2) SELECT DATABASE(); 
+ :- this query show the current database;
+ use dbname;
+ this query select the database for the operations
+
+3) CREATE DATABASE dbname;
+4) DROP DTABASE dbname;
+
+
+//_______________________Table queries_________________________//
+CREATE table tname ();
+desc tname;
+this give overview of the table which we created
+for inserting multiple values 
+INSERT INTO tname values(//values),(//values2);
