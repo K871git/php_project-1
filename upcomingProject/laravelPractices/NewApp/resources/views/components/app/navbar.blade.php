@@ -20,7 +20,7 @@
                     <input type="text" class="form-control ps-0" placeholder="Search">
                 </div>
             </div>
-            <div class="mb-0 font-weight-bold breadcrumb-text text-white">
+            {{-- <div class="mb-0 font-weight-bold breadcrumb-text text-white">
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
 
@@ -29,7 +29,7 @@
                         <button class="btn btn-sm  btn-white  mb-0 me-1" type="submit">Log out</button>
                     </a>
                 </form>
-            </div>
+            </div> --}}
             <ul class="navbar-nav  justify-content-end">
                 <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
                     <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">

@@ -7,7 +7,7 @@
             <span class="font-weight-bold text-lg">Corporate UI</span>
         </a>
     </div>
-    <div class="collapse navbar-collapse px-4  w-auto " id="sidenav-collapse-main">
+    {{-- <div class="collapse navbar-collapse px-4  w-auto " id="sidenav-collapse-main">
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link  {{ is_current_route('dashboard') ? 'active' : '' }}"
@@ -165,7 +165,7 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </div> --}}
     <div class="sidenav-footer mx-4 ">
         <a class="btn bg-gradient-primary inline-block px-5 py-3 mx-auto text-xs align-middle transition-all ease-in border-0 rounded-lg select-none" href="https://www.creative-tim.com/product/corporate-ui-dashboard-pro-laravel" target="_blank">
             UPGRADE TO PRO
