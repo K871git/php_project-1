@@ -15,3 +15,8 @@ SELECT DATABASE();
 show tables;
 
 select * from migrations;
+
+
+-- MYSQL DATE FUNCTIONS 
+
+SELECT DATE('2025-08-27 23:24:59') AS only_date;
