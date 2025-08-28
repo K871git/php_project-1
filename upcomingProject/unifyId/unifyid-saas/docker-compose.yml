@@ -13,15 +13,19 @@ services:
       - unifyid-net
 
   db:
-    image: postgres:15
+    image: mysql:8.0
     environment:
-      POSTGRES_DB: unifyid
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: secret
+      MYSQL_DATABASE: unifyid
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: secret
+    ports:
+      - '3306:3306'
     volumes:
-      - db-data:/var/lib/postgresql/data
+      - db-data:/var/lib/mysql
     networks:
       - unifyid-net
+
 
   redis:
     image: redis:7
