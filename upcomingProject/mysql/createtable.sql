@@ -8,14 +8,6 @@ CREATE TABLE student1(id int, name varchar(100));
 # writing the date functions inside the sql 
 CURRENT_DATE();
 SELECT CURRENT_DATE;
-show DATABASES;
-use practice;
-SELECT DATABASE();
-
-show tables;
-
-select * from migrations;
-
 
 -- MYSQL DATE FUNCTIONS 
 

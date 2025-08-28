@@ -11,3 +11,5 @@ use information_schema;
 show tables;
 select * from practice.tbl_student;
 
+
+
