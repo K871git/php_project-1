@@ -1,0 +1,7 @@
+# making an project of the unify id for the authentication for user of enterprice clients
+/unifyid-saas
+├─ /backend            # Laravel 12+ app
+├─ /frontend           # React SPA
+├─ /services           # microservices (e.g., Socket.io server)
+├─ /infrastructure     # Docker, Terraform, Helm charts
+└─ docker-compose.yml

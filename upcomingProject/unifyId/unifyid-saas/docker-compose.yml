@@ -1,0 +1,44 @@
+version: '3.9'
+services:
+  app:
+    build: ./backend
+    volumes:
+      - ./backend:/var/www/html
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - db
+      - redis
+    networks:
+      - unifyid-net
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: unifyid
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - unifyid-net
+
+  redis:
+    image: redis:7
+    networks:
+      - unifyid-net
+
+  frontend:
+    build: ./frontend
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./frontend:/app
+    networks:
+      - unifyid-net
+
+volumes:
+  db-data:
+
+networks:
+  unifyid-net:
