@@ -42,3 +42,7 @@ volumes:
 
 networks:
   unifyid-net:
+
+# Builds Laravel, Postgres, Redis, React in isolated containers
+# Mounts code for live reload
+# All services share unifyid-net for internal communication
