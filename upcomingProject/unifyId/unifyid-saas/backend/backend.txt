@@ -8,3 +8,6 @@
 # Install authentication packages:
     For token-based: composer require laravel/sanctum
     For OAuth2 server: composer require laravel/passport
+
+# Adding new link for the what'sApp 
+# Want to add the fast apis for the project
